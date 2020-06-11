@@ -58,8 +58,8 @@ class Solution:
         n = len(height)
         if n == 0:
             return res
-        l_max = height[0]
-        r_max = height[n - 1]
+        l_max = height[0] # 0-left里的最高
+        r_max = height[n - 1] # right-n里的最高
         left, right = 0, n - 1
         while left <= right:
             l_max = max(height[left], l_max)
